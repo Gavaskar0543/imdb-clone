@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding:0;
+  color:white;
+background-color:black;
+
+}
+#navbar{
+  
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+#menu{
+  display: flex;
+  width:60px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#search-icon{
+  display: flex;
+  justify-content: flex-end;
+  margin-top:-30px ;
+  margin-right: 10px;
+}
+#navbar div{
+  margin-left:2%;
+}
+#all-dropBox{
+width:700px;
+}
+.downBtn{
+  background-color:black;
+}
+#carouselExampleInterval{
+  margin-top:10%;
+  margin-left:5%;
+  display: inline-block;
+  width:60%;
+  height:500px;
+  border:1px solid white;
+  overflow: hidden;
+}
+#upNext{
+vertical-align: top;
+width:34%;
+height:540px;
+float:right;
+margin-left:-10px;
+margin-top:-510px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.movieBook{
+  margin-bottom:10px;
+  
+  display: flex;
+
+}
+.movieBook img{
+  width:100px;
+  height: auto;
+}
+#inside-movie{
+  margin-top:14px;
+  margin-left:14px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
