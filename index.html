@@ -15,32 +15,34 @@
     <div id="logo">
       <img src="images/logo2.png" height="20px" alt="img"> 
     </div>
-    <div>
-      <div id="menu">
-       
+      <span>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
         </svg>
-      
+    </span>
+      <div>
       menu
-      </div>
+      
     </div>
-    <div class="dropdown border" id="all-dropBox" >
-      <button class="btn btn-secondary downBtn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-       All
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-      <span>Search on imdb</span>
-      <span id="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <div id="all-dropBox">
+      <div class="dropdown bg-light border-0">
+        <button class="btn downBtn bg-lights  dropdown-toggle border-0" type="button" data-bs-toggle="dropdown" style="color:black" aria-expanded="false">
+         All
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+        </div>
+      <span style="background-color:azure;color:black;">Search on imdb</span>
+      <span class="bg-light" style="background-color:azure;" id="search-icon"><svg class="bg-light" style="color:black;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
       </svg></span>
     </div>   
-      <div class="btn border" style="color:white;">
-        imdbPro
+  
+      <div >
+        imdb<span style="color:aqua">Pro</span>
       </div>
       <div>
         <span>
@@ -52,8 +54,8 @@
       <div>
         Sign in
       </div>
-      <div class="dropdown">
-        <button class="btn downBtn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="dropdown ">
+        <button class="btn downBtn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
          EN
         </button>
         <ul class="dropdown-menu">
@@ -88,7 +90,7 @@
     </div>
   </div>
   <section id="upNext">
-    <h4>Up next</h4>
+    <h4 class="title-yellow">Up next</h4>
     <div class="upnextMovie">
       <div class="movieBook">
       <img src="images/movieBook/tom.jpg" id="movieBookImg" alt="img-movieBook">
