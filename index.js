@@ -73,6 +73,5 @@ movieBox.append(li);
 
 
 
-//api_key=da3a66d8d5e7b9b57503a1a79c697b38
 
  //fetch('https://api.themoviedb.org/3/movie/551?api_key=da3a66d8d5e7b9b57503a1a79c697b38')
