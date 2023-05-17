@@ -10,79 +10,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d191a987e3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div id="navbar">
-        <div id="logo">
-          <img src="images/logo2.png" height="20px" alt="img"> 
-        </div>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-        </span>
-          <div>
-          menu
-          
-        </div>
-        <div id="all-dropBox">
-          <div class="dropdown bg-light border-0">
-            <button class="btn downBtn bg-lights  dropdown-toggle border-0" type="button" data-bs-toggle="dropdown" style="color:black" aria-expanded="false">
-             All
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-            </div>
-            <div class="input-group bg-light">
-              <input type="text" class="border-0 bg-light form-control" id="text-box" placeholder="search on imdb" aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <div class="input-group-append bg-light border-0">
-                <button class="btn bg-light border-0 btn-outline-secondary" id="search-btn" type="button"><span class="bg-light" style="background-color:azure;" id="search-icon"><svg class="bg-light" style="color:black;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg></span></button>
-              </div>
-            </div>
-          
-        </div>   
-      
-          <div >
-            <b>IMDb</b><span style="color:aqua">Pro</span>
-          </div>
-          <div>
-            <svg style="margin-left:-3%;color:white;font-size:2rem;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-              <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-            </svg>
-            watchlist
-          </div>
-    
-          <div>
-            Sign in
-          </div>
-          <div class="dropdown ">
-            <button class="btn downBtn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
-             EN
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-            </div>
-        </div>
-      </div>
       <!---section play-->
-      <section id="movie-play"style="">
-       <div>
-        <i class="fa-duotone fa-arrow-left" style="--fa-primary-color: #c42ce2; --fa-secondary-color: #0fcc2f;"></i>
-       </div>
+      <section id="movie-play">
+      
+        <div id="movie-show">
+          
+        </div>
+     
        <!--movie display part-->
-       <div class="container-fluid">
-
-       </div>
       </section>
 
       <script src="moviepage.js"></script>

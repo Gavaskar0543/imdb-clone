@@ -44,9 +44,17 @@ function apiCall(url){
         // array of movies 
        var  moviesArray = conJson.results;
         // create the movie cards here 
-        moviesArray.forEach(movie => movieRender(movie));
-    }
-}
+       //Remove duplicates from moviesArray
+        var uniqueMoviesArray = moviesArray.filter((movie, index, self) =>
+          index === self.findIndex(m => (
+            m.id === movie.id
+          ))
+        );
+
+        uniqueMoviesArray.forEach(movie => movieRender(movie));
+          }
+        }
+
 
 function movieRender(movie){
    let li = document.createElement('li');
