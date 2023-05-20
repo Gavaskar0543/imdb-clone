@@ -24,12 +24,18 @@ function movieDisplay(movie){
 let div = document.createElement('div');
   div.classList.add('movie-show');
   div.innerHTML = `
-  <div style="color:white;position:relative; height:10%; width:90%;margin-top:5%; margin-left:5%; border:1px solid white;">
-  <h1 style="color:white">${movie.title}</h1>
+  <div style="color:white;position:relative; height:10%; width:90%;margin-top:5%; margin-left:5%;">
+  <h1 class="title-yellow" style="font-size:2rem;font-weight:600;">${movie.title}</h1>
   <img src="${iMAGEURL+movie.poster_path}" alt="img" height="100%" width="30%" >
 <div style="display:flex;margin-top:-40%; margin-left:35%;flex-direction:column;position:absolute; width:60%;">
-<h3>Overview</h3>
+<h3 class="title-yellow" style="font-size:2rem;fornt-weight:500;">Overview</h3>
 <p>${movie.overview}</p>
-<h3>Release Date-${movie.release_date}</h3></div> </div>   `  
+
+<h3 class="title-yellow">Release Date:-</h3><h3>${movie.release_date}</h3>
+</div> 
+
+</div> 
+
+`
 play.append(div);
  } 

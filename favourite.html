@@ -11,6 +11,7 @@
         margin: 0;
         padding: 0;
         background-color: black;
+        font-family: 'Montserrat', sans-serif;
     }
     .title{
         font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -36,7 +37,13 @@
    #backbtn a:hover{
     color:goldenrod;
    }
+   .title-yellow{
+    color:goldenrod;
+   }
 </style>
+<script src="https://kit.fontawesome.com/d191a987e3.js" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
@@ -47,11 +54,11 @@
     <div>
         <h2 class="title" style="color:gold;">favourite Movies List</h2>
     </div>
-  <di id="movieSection">
-    <ul id="showmovie" style="color:white;">
-
+  <div id="movieSection" style="margin-left:10%;margin-top:4%;height:100%;width:80%;">
+     <ul type="none" style="height:100%; display:flex; justify-content:space-around; color:white; width:100%;" id="showMovie">
+       
     </ul>
-  </di>
+  </div>
     <script src="./favmovies.js"></script>
 </body>
 </html>
