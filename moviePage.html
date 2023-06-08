@@ -10,28 +10,61 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d191a987e3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
        <style>
         *{
+         
           font-family: 'Montserrat', sans-serif;
         }
+
+       
+         .movie-display img {
+         height:500px;
+         width:40%;
+        } 
+      .box{
+       
+        margin-left:10%;
+      }
         .title-yellow{
           color:goldenrod;
         }
+      
+        #backbtn{
+          margin-top:3%;
+          margin-left: 2%;
+         }
+         #backbtn a{
+          color:white;
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          border:1px dashed gold;
+         } 
+         #backbtn a:hover{
+          color:goldenrod;
+         }
+         .title-yellow{
+          color:goldenrod;
+         }
+      
+    
        </style>
   </head>
 <body>
       <!---section play-->
       <section id="movie-play">
-      
-        <div id="movie-show" style="color:white;">
-          
-        </div>
+        <div id="backbtn">
+          <h2><a href="/index.html"> < Back</a></h2>
+      </div>
+      <div id="movie-show" style="color:white;">
+         
+      </div>
      
        <!--movie display part-->
       </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.bundle.min.js"></script>
 
       <script src="moviepage.js"></script>
 </body>

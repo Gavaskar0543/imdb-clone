@@ -19,31 +19,31 @@ $.ajax({
     }
    
 });
-
-
 function movieDisplay(movie){
-    let li = document.createElement('li');
-    li.classList.add('col-2');
-    li.innerHTML = `
-    <div  class="d-flex justify-content-between  " style="margin-top:5%;" >
-    <div class="row">
-    <div class="movie-poste colr"style="height:300px;">
-    <a href="moviePage.html?id=${movie.id}"><img src= ${iMAGEURL+movie.poster_path} height="100%%" width="100%" alt="Movie Poster"></a>
- </div>
- <span class="col movie-title" style="font-size:1.5rem;">${movie.title}</span>
- <div class="movie-element-tags col">
-    <span class="movie-rating title-yellow">
-   
-    <i class="fas fa-star"></i> ${movie.vote_average}
-  </span>
-  <span><i class="fas fa-heart fa-shake"  id="favmovie-${movie.id}" onclick="favmovie(${movie.id})"></i></span>
-  </div>
- </div>
-     </div>`   
+  let li = document.createElement('li');
+  li.classList.add('col-8', 'col-sm-6', 'col-md-4', 'col-lg-2');
+
+  li.innerHTML = `
+  <div  class="d-flex justify-content-between  " style="margin-top:5%;" >
+  <div class="row">
+  <div class="movie-poste colr"style="height:300px;">
+  <a href="moviePage.html?id=${movie.id}"><img src= ${iMAGEURL+movie.poster_path} height="100%%" width="100%" alt="Movie Poster"></a>
+</div>
+<span class="col movie-title" style="font-size:1.5rem;">${movie.title}</span>
+<div class="movie-element-tags col">
+  <span class="movie-rating title-yellow">
+ 
+  <i class="fas fa-star"></i> ${movie.vote_average}
+</span>
+<span><i class="fas fa-heart fa-shake"  id="favmovie-${movie.id}" onclick="favmovie(${movie.id})"></i></span>
+</div>
+</div>
+   </div>`   
 /* `movieBox.append(li)` is appending the newly created `li` element to the `movieBox` element. This
 means that the `li` element will be added as a child element of the `movieBox` element. */
 $("#showMovies").append(li);
- } 
+}
+
  
 //fav
 let favmovie = (movieId) => {
