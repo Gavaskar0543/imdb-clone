@@ -23,15 +23,24 @@ function movieDisplay(movie) {
     div.classList.add('movie-display');
     
     div.innerHTML =`
-    <div>
+    
+    <div style="postion:absolute">
     <img src= ${iMAGEURL+movie.poster_path}  width="100%" alt="Movie Poster">
 
     </div>
-    <div style="width:50%;float:right;margin-top:-40%;margin-left:-10%;">
+
+    <div class="container"style="backgorund:${iMAGEURL+movie.backdrop_path}; width:50%;float:right;margin-top:-40%;margin-left:-10%;">
     <h1 class="title-yellow">${movie.title}</h1>
     <h1>Description</h1>
      <p>${movie.overview}</p>
      <h1>Rating:<span class="title-yellow">${movie.vote_average}</h1>
+   
+    <h1>Content: <span class="title-yellow">${movie.adult ? "A 18+" :'U 13+'}
+    </span></h1>
+    <h1>Language:<span class="title-yellow">${movie.original_language
+    }</span></h1>
+    <h1>Release Date:<span class="title-yellow">${movie.release_date}</span></h1>
+    </div>
     </div>
    `
     $('#movie-show').append(div);

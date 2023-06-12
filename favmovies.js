@@ -5,7 +5,7 @@ const iMAGEURL = 'https://image.tmdb.org/t/p/w500';
 
 let movieplay = (movie)=>{
     let li = document.createElement('li');
-    li.classList.add('col-6');
+    li.classList.add('col-8', 'col-sm-6', 'col-md-4', 'col-lg-2');
     li.innerHTML = `
     
     <div style="margin-left:10%;">
@@ -16,10 +16,36 @@ let movieplay = (movie)=>{
    
  <i class="fas fa-star"></i> ${movie.vote_average}
 </span>
+<div class="border" style="color:red;cursor:pointer;">
+  <p onclick="removeFav(${movie.id})"> REMOVE</p>
+</div>
  `
  
     $("#showMovie").append(li);
 }
+
+const removeFav = (movieId) => {
+    const movieList = JSON.parse(localStorage.getItem('movies'));
+    const index = movieList.indexOf(movieId);
+    
+    if (index !== -1) {
+      // Remove the movie ID from the list
+      movieList.splice(index, 1);
+      localStorage.setItem('movies', JSON.stringify(movieList));
+      
+      // Remove the movie element from the DOM
+      const movieElement = document.getElementById(`movie-${movieId}`);
+      if (movieElement) {
+        movieElement.remove();
+      }
+    }
+   
+     
+      location.reload();
+  };
+  
+      
+
 let start = () =>{
 const storedMovieList = JSON.parse(localStorage.getItem('movies'));
 console.log( "moveies",storedMovieList);

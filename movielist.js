@@ -11,6 +11,7 @@ $.ajax({
     type: "get",
     url: HOMEURL,
     success: function (data) {
+      console.log(data);
       moviesbox =  data.results;
       moviesbox.forEach(element => {
         movieDisplay(element)
@@ -25,7 +26,7 @@ function movieDisplay(movie){
 
   li.innerHTML = `
   <div  class="d-flex justify-content-between  " style="margin-top:5%;" >
-  <div class="row">
+  <div class="row  animate__animated animate__hover">
   <div class="movie-poste colr"style="height:300px;">
   <a href="moviePage.html?id=${movie.id}"><img src= ${iMAGEURL+movie.poster_path} height="100%%" width="100%" alt="Movie Poster"></a>
 </div>

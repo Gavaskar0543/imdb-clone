@@ -336,3 +336,22 @@ color:rgb(245,197,24);
 
 
 
+    /* Custom CSS for hover animations */
+    .animate__animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    .animate__hover:hover {
+      animation-name: bounce;
+    }
+
+    /* Define the bounce animation */
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
