@@ -3,6 +3,8 @@
 
 // this is the image url 
 /* The above code is declaring variables and assigning them to the HTML elements. */
+var moviebox = (function(){
+
 const movieName = document.getElementById('text-box');
 const searchBtn = document.getElementById('search-btn');
 let movieBox = document.getElementById('showMovies');
@@ -62,6 +64,11 @@ movieBox.append(li);
 
 
 
-
+return{
+  searchMoives,
+  movieRender,
+    }
+  })();
+  moviebox.searchMoives();
 
  //fetch('https://api.themoviedb.org/3/movie/551?api_key=da3a66d8d5e7b9b57503a1a79c697b38')
